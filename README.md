@@ -2,4 +2,4 @@
 
 Blogger Community test of Code Stream 
 
-Goes
+This container will eventually spin up in kubernetes. 
