@@ -1,3 +1,3 @@
 # Blogger Demo
 
-This is a test
+Blogger Community test of Code Stream 
