@@ -12,7 +12,7 @@
 
 <head>
     <title>
-       Blogger Demo 
+       VMware Cloud Management
     </title>
 </head>
 
@@ -22,37 +22,12 @@
         <span class="title">Blogger-Demo</span>
     </div>
     <div class="header-nav">
-        {% if session['logged_in']==True %}
             <a href="/" class="nav-link nav-text">Home</a>
             <a href="/configure/" class="nav-link nav-text">Configuration</a>
-            <a href="/commands/" class="nav-link nav-text">Alexa Commands</a> 
-            <div class="header-actions">
-                <a href="/logout/" class="nav-link nav-text">
-                    Log Out
-                </a>
-            </div>
-        {% else %}
-            <a href="/" class="nav-link nav-text">Home</a> 
-        {% endif %}
     </div>
 </header>
 
 <body>
-    <div>
-        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-        <div class="alert alert-danger">
-    <button type="button" class="close" aria-label="Close">
-        <clr-icon aria-hidden="true" shape="close"></clr-icon>
-    </button>
-    <div class="alert-item">
-        <span>
-            {{ message }}
-        </span>
-    </div>
-</div>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
 </div>
 {% block body %}{% endblock %}
 </body>
