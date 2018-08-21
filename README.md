@@ -1,5 +1,3 @@
 # Blogger Community Demo
 
-Blogger Community test of Code Stream
-
-Line endings matter
+Simple Python + Flask webpage with Basic Clarity UI styling
