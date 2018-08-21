@@ -1,4 +1,11 @@
-.table {
+table .table {
+    max-width: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nda {
     max-width: 50%;
     width: 50%;
     margin-left: auto;
