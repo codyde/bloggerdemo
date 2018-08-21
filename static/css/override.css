@@ -4,3 +4,12 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+html {
+    background-color:black;
+}
+
+h3 {
+    font-size:3rem;
+    text-align: center;
+}
