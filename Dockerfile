@@ -42,4 +42,3 @@ RUN chown uwsgi:nginx /srv/avss && \
     chmod 755 /srv/avss/startup.sh 
 
 CMD /srv/avss/startup.sh
-CMD ["/bin/bash"]
