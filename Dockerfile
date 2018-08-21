@@ -2,7 +2,7 @@ FROM centos
 
 MAINTAINER Cody De Arkland <cdearkland@vmware.com>
 
-EXPOSE 443
+EXPOSE 80
 
 WORKDIR /srv/avss/appdata
 
@@ -32,8 +32,6 @@ COPY . /srv/avss/appdata
 RUN mv configs/nginx.conf /etc/nginx/nginx.conf
 RUN mv configs/avss.ini /etc/uwsgi.d/avss.ini
 RUN mv configs/bloggerdemo.conf /etc/nginx/conf.d/bloggerdemo.conf
-RUN mkdir -p /etc/letsencrypt/live/bloggerdemo.humblelab.com/
-RUN mv configs/*.pem /etc/letsencrypt/live/bloggerdemo.humblelab.com/
 RUN mv configs/startup.sh /srv/avss/startup.sh
 RUN rmdir /srv/avss/appdata/configs
 
