@@ -1,35 +1,23 @@
 <div class="main-container" style="background-color:black">
-<!DOCTYPE html> 
-<head>
-{% assets "js_all" %}
-<script type="text/javascript" src="{{ ASSET_URL }}"></script>
-{% endassets %} 
-{% assets "css_all" %}
-<link rel=stylesheet type="text/css" href="{{ ASSET_URL }}"> 
-{% endassets %}
-<style>
-    header .branding {
-        display: flex;
-        align-items: center;
-    }
-</style>
-<html lang="en">
+<!DOCTYPE html>
+    <head>
+        {% assets "js_all" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script> 
+        {% endassets %} 
+        {% assets "css_all" %}
+        <link rel=stylesheet type="text/css" href="{{ ASSET_URL }}"> 
+        {% endassets %}
+    
+        <title>
+            VMware Cloud Management
+        </title>
+    </head>
 
-
-    <title>
-       VMware Cloud Management
-    </title>
-</head>
-
-<header class="header-6">
-    <div class="branding">
-        <clr-icon shape="vm"></clr-icon>
-        <span class="title">VMware</span>
-    </div>
-</header>
-
-<body>
-{% block body %}{% endblock %}
-</body>
-</html>
+    <header class="header-6">
+        <div class="branding">
+            <clr-icon shape="vm"></clr-icon>
+            <span class="title">VMware</span>
+        </div>
+    </header>
+            {% block body %}{% endblock %}
 </div>
