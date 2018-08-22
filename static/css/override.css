@@ -15,3 +15,9 @@ html {
     text-align: center;
     margin-bottom: 1rem;
 }
+
+table.table.datatable {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%; 
+}
