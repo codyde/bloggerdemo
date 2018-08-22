@@ -1,6 +1,9 @@
 .nda {
     text-align: center;
-    color:red
+    color:red;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 html {
@@ -8,6 +11,7 @@ html {
 }
 
 .name {
-    font-size:3rem;
+    font-size: 2rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
