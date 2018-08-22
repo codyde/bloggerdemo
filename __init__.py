@@ -19,5 +19,9 @@ env.register('css_all', css)
 def homepage():
     return render_template('index.html')
 
+@app.route('/health')
+def health():
+    return jsonify(test="success")
+
 if __name__ == '__main__':
     app.run(debug=True)
