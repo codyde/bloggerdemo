@@ -6,6 +6,11 @@
     margin-right: auto;
 }
 
+header .branding {
+    display: flex;
+    align-items: center;
+}
+
 .name {
     font-size: 2rem;
     text-align: center;
